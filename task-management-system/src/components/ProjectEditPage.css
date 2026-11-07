@@ -1,0 +1,73 @@
+.project-edit-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 35px;
+    background: #1f2937;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-edit-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.project-edit-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-edit-container input,
+.project-edit-container textarea,
+.project-edit-container select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    color: #111827;
+}
+
+.project-edit-container textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.project-edit-container input:focus,
+.project-edit-container textarea:focus,
+.project-edit-container select:focus {
+    outline: 2px solid #38bdf8;
+}
+
+.project-edit-container button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-edit-container button:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.project-edit-container button[type="button"] {
+    background: #374151;
+}
+
+.project-edit-container button[type="button"]:hover {
+    background: #4b5563;
+}

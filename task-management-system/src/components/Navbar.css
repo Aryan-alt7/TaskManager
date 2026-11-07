@@ -1,0 +1,124 @@
+.navbar {
+    width: 100%;
+    height: 75px;
+
+    background: #111827;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+
+    box-sizing: border-box;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+.logo h2 {
+    color: #38bdf8;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.notification {
+    background: #1f2937;
+    border: none;
+
+    color: white;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 1.1rem;
+
+    transition: .3s;
+}
+
+.notification:hover {
+    background: #38bdf8;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 2px solid #38bdf8;
+}
+
+.profile span {
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 4px;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logout-button:hover {
+    background: rgba(239, 68, 68, 0.3);
+    color: white;
+    border-color: rgba(248, 113, 113, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.25);
+}
+
+.logout-button:active {
+    transform: translateY(0);
+}

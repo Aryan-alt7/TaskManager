@@ -1,0 +1,300 @@
+
+/* =========================
+   PROJECTS CONTAINER
+========================= */
+
+.projects-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 70px;
+    color: white;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+.projects-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.projects-header p {
+    margin-top: 8px;
+    color: #9ca3af;
+    font-size: 1rem;
+}
+
+
+/* =========================
+   NEW PROJECT BUTTON
+========================= */
+
+.new-project-btn {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.new-project-btn:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SEARCH + FILTER
+========================= */
+
+.search-filter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.search-filter input {
+    flex: 1;
+    padding: 13px 16px;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    outline: none;
+    background: #111827;
+    color: white;
+    font-size: 1rem;
+}
+
+.search-filter input::placeholder {
+    color: #6b7280;
+}
+
+.search-filter input:focus {
+    border-color: #38bdf8;
+}
+
+.search-filter select {
+    padding: 13px 18px;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    outline: none;
+    background: #111827;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search-filter select:focus {
+    border-color: #38bdf8;
+}
+
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.25s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background: #374151;
+    border-radius: 5px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 65%;
+    height: 100%;
+    background: #38bdf8;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   PROJECT INFO
+========================= */
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    color: #d1d5db;
+}
+
+.deadline {
+    color: #facc15;
+}
+
+
+/* =========================
+   CARD BUTTONS
+========================= */
+
+.card-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-buttons button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-projects {
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    background: #1f2937;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    color: white;
+    text-align: center;
+}
+
+.empty-projects h2 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    color: #38bdf8;
+}
+
+.empty-projects p {
+    margin-bottom: 25px;
+    color: #9ca3af;
+    font-size: 1rem;
+}
+
+.empty-projects button {
+    padding: 12px 28px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+
+    background: #38bdf8;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.empty-projects button:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.empty-projects a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.projects-container + h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .projects-container {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .projects-header h1 {
+        font-size: 2.1rem;
+    }
+
+    .new-project-btn {
+        width: 100%;
+    }
+
+    .search-filter {
+        flex-direction: column;
+    }
+
+    .search-filter select {
+        width: 100%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

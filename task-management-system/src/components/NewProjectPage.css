@@ -1,0 +1,88 @@
+.new-project-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 35px;
+
+    background: #1f2937;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+
+    color: white;
+}
+
+.new-project-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #38bdf8;
+    font-size: 2rem;
+}
+
+.new-project-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.new-project-container input,
+.new-project-container textarea,
+.new-project-container select {
+    width: 100%;
+    padding: 14px 16px;
+
+    background: #111827;
+    color: white;
+
+    border: 2px solid #374151;
+    border-radius: 10px;
+
+    font-size: 1rem;
+    outline: none;
+
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.new-project-container textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.new-project-container input:focus,
+.new-project-container textarea:focus,
+.new-project-container select:focus {
+    border-color: #38bdf8;
+}
+
+.new-project-container input::placeholder,
+.new-project-container textarea::placeholder {
+    color: #9ca3af;
+}
+
+.new-project-container button {
+    margin-top: 10px;
+    padding: 14px;
+
+    background: #38bdf8;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.new-project-container button:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.new-project-container button:disabled {
+    background: #6b7280;
+    cursor: not-allowed;
+    transform: none;
+}
